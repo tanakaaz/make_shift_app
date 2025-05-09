@@ -8,7 +8,7 @@ public class MainController {
     @GetMapping("/")
     public String sayHello(Model model) {
         System.out.println("Aa");
-        model.addAttribute("message","asssssa");
+        model.addAttribute("message","bbbbbbbsa");
         return "index";
     }
 }
