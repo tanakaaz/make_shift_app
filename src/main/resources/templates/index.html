@@ -6,10 +6,16 @@
     <title>Document</title>
 </head>
 <body>
+    <div th:if="${param.error}">
+        <p style="color:red;">ログインに失敗しました。</p>
+        <p style="color:red;">IDかパスワードのいずれかが正しくありません。</p>
+    </div>
     <h1>シフト作成アプリ</h1>
     <h2>ログイン画面</h2>
-    
-    <input placeholder="従業員ID">
-    <input placeholder="password">
+    <form method="post" th:action="@{/login}">
+        <label>ユーザ名:<input type="text" name="userName" placeholder="従業員ID" required></label>
+        <input type="password" name="password" placeholder="password" required>
+        <button type="submit">ログイン</button>
+    </form>
 </body>
 </html>
