@@ -6,9 +6,7 @@ import org.springframework.ui.Model;
 public class MainController {
 
     @GetMapping("/")
-    public String sayHello(Model model) {
-        System.out.println("Aa");
-        model.addAttribute("message","bbbbbbbsa");
+    public String homePage(Model model) {
         return "index";
     }
 }
