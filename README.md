@@ -8,3 +8,9 @@ import org.springframework.ui.Model;
 
 model.addAttribute("message","mictest");
 th:text="${message}"
+
+DB系のメモ
+docker-compose up -d
+docker ps
+docker exec -it postgres-container psql -U postgres -d appdb
+\dt
