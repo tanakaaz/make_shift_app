@@ -14,3 +14,9 @@ docker-compose up -d
 docker ps
 docker exec -it postgres-container psql -U postgres -d appdb
 \dt
+
+(end)が出たらqを押す
+コンテナ名　＝　postgres-container
+ユーザ名　　＝　postgres
+データベース名 = appdb
+表名　＝　appdb
